@@ -1,4 +1,5 @@
-Machine Learning Project
+## Machine Learning Project ##
+
 📌 Overview
 This project uses machine learning to solve a real-world problem using Python. It includes data cleaning, exploratory data analysis (EDA), feature engineering, model training, evaluation, and web deployment.
 
