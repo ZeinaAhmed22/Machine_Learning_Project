@@ -1,72 +1,74 @@
-## Machine Learning Project ##
+## Cancer Survival Prediction – Machine Learning Project ##
 
-📌 Overview
-This project uses machine learning to solve a real-world problem using Python. It includes data cleaning, exploratory data analysis (EDA), feature engineering, model training, evaluation, and web deployment.
+# Project Description #
+This project predicts the survival outcome of cancer patients using a machine learning model trained on a rich clinical and demographic dataset. It uses a Random Forest classifier trained on 29 features, and the final model is deployed as a web app using Streamlit.
 
-📂 Project Structure
+# Dataset Overview #
+The dataset (from Kaggle) includes medical and lifestyle data for cancer patients such as:
+
+- Tumor size
+- Cancer stage
+- Treatment type
+- Smoking and alcohol history
+- Genetic and family history
+- Healthcare access and cost
+- Comorbidities like diabetes, hypertension, heart disease
+- Demographic data such as gender, age, and location
+
+The target column is Survival Prediction, with two classes:
+1. Survived (1)
+2. Not Survived (0)
+
+# Model Used #
+Algorithm: Random Forest Classifier
+Features: 29 selected and encoded features
+Preprocessing: MinMaxScaler
+Evaluation Metrics: Accuracy, F1-score, AUC-ROC
+
+# Web App (Streamlit) #
+Users can enter patient data into the web interface and get an instant survival prediction based on the trained model.
+
+To launch the app locally:
 ```
-├── app.py                  # Flask web app for deployment
-├── notebook.ipynb          # Main Jupyter/Colab notebook with all steps
-├── model.pkl               # Saved machine learning model
-├── scaler.pkl              # Saved preprocessor (if any)
-├── dataset.csv             # Raw or cleaned dataset
-├── README.md               # Project description and instructions
-└── requirements.txt        # Python dependencies
+streamlit run streamlit_app.py
 ```
-⚙️ Setup Instructions
-Clone the repository:
+
+# Project Structure #
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+Cancer-Survival-Prediction/
+│
+├── Cleaned_Train.csv          # Final cleaned dataset used for training
+├── Train.csv                  # Original training dataset from Kaggle
+├── X_features.csv             # Features after preprocessing
+├── y_target.csv               # Labels (Survival Prediction)
+│
+├── best_rf_model.pkl          # Saved trained model
+├── scaler.pkl                 # Saved MinMaxScaler
+│
+├── Machine_Learning_Project_Zeina (3).ipynb  # Jupyter notebook with full ML pipeline
+├── streamlit_app.py           # Streamlit app for deployment
+├── requirements.txt           # List of required Python packages
+├── README.md                  # Project overview and instructions
+└── streamlit/                 # (Optional folder for Streamlit assets or deployment)
 ```
-Create a virtual environment (optional but recommended):
-```
-python -m venv venv
-source venv/bin/activate    # On Linux/macOS
-venv\Scripts\activate       # On Windows
-```
-Install required packages:
+
+# How to Run the Project #
+1. Clone the repo or download the files
+2. (Optional) Create a virtual environment
+3. Install requirements:
 ```
 pip install -r requirements.txt
 ```
-Run the web application:
+4. Run the Streamlit app:
 ```
-python app.py
-The app will usually be accessible at:
-http://127.0.0.1:5000/
+streamlit run streamlit_app.py
 ```
-🧪 How to Use the Web App
-Open the app in your browser.
+# Video Drive Link #
+https://drive.google.com/drive/folders/1_FCVw1lKUrVcrIk3_PmTv_CH6uTThlCB?usp=sharing
+Overview of the dataset
 
-Input the required data.
+Brief explanation of model training
 
-Get instant predictions using the trained ML model.
+Streamlit app in action (input sample data → prediction output)
 
-🧾 Requirements
-Python 3.x
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-flask
-joblib
-
-📹 Project Demo
-A full demo video of the project is available here:
-📺 [Link to your demo video]
-
-📁 Dataset
-Dataset source: [Name or link to dataset]
-
-Description: [Short description of the data]
-
-✅ Features Completed
- Data Cleaning
- Exploratory Data Analysis (EDA)
- Feature Engineering
- Feature Selection
- Model Training & Tuning
- Evaluation (Precision, Recall, etc.)
- Web Deployment
- Video Explanation
+Wrap-up with a note about accuracy/performance
