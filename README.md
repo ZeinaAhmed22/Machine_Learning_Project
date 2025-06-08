@@ -1,9 +1,9 @@
-## Cancer Survival Prediction – Machine Learning Project ##
+# Cancer Survival Prediction – Machine Learning Project #
 
-# Project Description #
+## Project Description ##
 This project predicts the survival outcome of cancer patients using a machine learning model trained on a rich clinical and demographic dataset. It uses a Random Forest classifier trained on 29 features, and the final model is deployed as a web app using Streamlit.
 
-# Dataset Overview #
+## Dataset Overview ##
 The dataset (from Kaggle) includes medical and lifestyle data for cancer patients such as:
 
 - Tumor size
