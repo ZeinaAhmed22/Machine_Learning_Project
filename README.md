@@ -19,13 +19,13 @@ The target column is Survival Prediction, with two classes:
 1. Survived (1)
 2. Not Survived (0)
 
-# Model Used #
+## Model Used ##
 Algorithm: Random Forest Classifier
 Features: 29 selected and encoded features
 Preprocessing: MinMaxScaler
 Evaluation Metrics: Accuracy, F1-score, AUC-ROC
 
-# Web App (Streamlit) #
+## Web App (Streamlit) ##
 Users can enter patient data into the web interface and get an instant survival prediction based on the trained model.
 
 To launch the app locally:
@@ -33,7 +33,7 @@ To launch the app locally:
 streamlit run streamlit_app.py
 ```
 
-# Project Structure #
+## Project Structure ##
 ```
 Cancer-Survival-Prediction/
 │
@@ -52,7 +52,7 @@ Cancer-Survival-Prediction/
 └── streamlit/                 # (Optional folder for Streamlit assets or deployment)
 ```
 
-# How to Run the Project #
+## How to Run the Project ##
 1. Clone the repo or download the files
 2. (Optional) Create a virtual environment
 3. Install requirements:
@@ -63,5 +63,5 @@ pip install -r requirements.txt
 ```
 streamlit run streamlit_app.py
 ```
-# Video Drive Link #
+## Video Drive Link ##
 https://drive.google.com/drive/folders/1_FCVw1lKUrVcrIk3_PmTv_CH6uTThlCB?usp=sharing
