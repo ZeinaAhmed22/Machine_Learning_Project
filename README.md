@@ -65,10 +65,3 @@ streamlit run streamlit_app.py
 ```
 # Video Drive Link #
 https://drive.google.com/drive/folders/1_FCVw1lKUrVcrIk3_PmTv_CH6uTThlCB?usp=sharing
-Overview of the dataset
-
-Brief explanation of model training
-
-Streamlit app in action (input sample data → prediction output)
-
-Wrap-up with a note about accuracy/performance
