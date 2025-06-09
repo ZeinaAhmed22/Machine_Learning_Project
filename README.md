@@ -46,6 +46,7 @@ Cancer-Survival-Prediction/
 ├── scaler.pkl                 # Saved MinMaxScaler
 │
 ├── Machine_Learning_Project_Zeina (3).ipynb  # Jupyter notebook with full ML pipeline
+├── Machine_Learning_Report_Zeina             # Report of the project
 ├── streamlit_app.py           # Streamlit app for deployment
 ├── requirements.txt           # List of required Python packages
 ├── README.md                  # Project overview and instructions
